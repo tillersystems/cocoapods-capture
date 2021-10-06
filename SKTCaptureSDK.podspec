@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         = "SKTCapture"
+  s.name         = "SKTCaptureSDK"
   s.version      = "1.3.60"
   s.summary      = "Capture SDK Swift for Socket Mobile wireless devices."
   s.homepage     = "https://www.socketmobile.com"
