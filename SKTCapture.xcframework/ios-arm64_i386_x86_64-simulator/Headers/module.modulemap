@@ -1,11 +1,4 @@
 module SKTCapture {
-    umbrella header "SKTCapture.h"
-    umbrella header "SktCaptureDataSource.h"
-    umbrella header "SktCaptureDeviceTypes.h"
-    umbrella header "SktCaptureErrors.h"
-    umbrella header "SktCaptureEvent.h"
-    umbrella header "SktCaptureProperty.h"
-    umbrella header "SktCapturePropertyIds.h"
-    umbrella header "SktCaptureVersion.h"
+    header "SKTCapture.h"
     export *
 }
