@@ -1,0 +1,11 @@
+framework module SKTCapture {
+  umbrella header "SKTCapture-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module SKTCapture.Swift {
+    header "SKTCapture-Swift.h"
+    requires objc
+}
