@@ -12,6 +12,7 @@
 
 #import "SKTCapture.h"
 #import "SktCaptureDataSource.h"
+#import "SktCaptureDeviceTypes.h"
 #import "SktCaptureErrors.h"
 #import "SktCaptureEvent.h"
 #import "SktCaptureProperty.h"

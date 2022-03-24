@@ -15,177 +15,177 @@
 /**
  @brief device type class
  */
-typedef NS_ENUM (NSInteger, SKTCaptureDeviceClass) {
-    /** the device belongs to the device class */
-    SKTCaptureDeviceTypeClassDevice,
-    /** the device belongs to the device manager class */
-    SKTCaptureDeviceTypeClassDeviceManager
-};
+//typedef NS_ENUM (NSInteger, SKTCaptureDeviceClass) {
+//    /** the device belongs to the device class */
+//    SKTCaptureDeviceTypeClassDevice,
+//    /** the device belongs to the device manager class */
+//    SKTCaptureDeviceTypeClassDeviceManager
+//};
 
 /**
  @brief Capture Device Interface type
 
  */
-typedef NS_ENUM (NSInteger, SKTCaptureDeviceInterfaceType) {
-    /** interface not specified */
-    SKTCaptureDeviceInterfaceTypeNone = 0,
-    /** interface Secure Digital */
-    SKTCaptureDeviceInterfaceTypeSD = 1,
-    /** interface Compact Flash */
-    SKTCaptureDeviceInterfaceTypeCF = 2,
-    /** interface Bluetooth */
-    SKTCaptureDeviceInterfaceTypeBluetooth = 3,
-    /** interface Serial */
-    SKTCaptureDeviceInterfaceTypeSerial = 4,
-    /** interface BLE */
-    SKTCaptureDeviceInterfaceTypeBle = 5
-};
+//typedef NS_ENUM (NSInteger, SKTCaptureDeviceInterfaceType) {
+//    /** interface not specified */
+//    SKTCaptureDeviceInterfaceTypeNone = 0,
+//    /** interface Secure Digital */
+//    SKTCaptureDeviceInterfaceTypeSD = 1,
+//    /** interface Compact Flash */
+//    SKTCaptureDeviceInterfaceTypeCF = 2,
+//    /** interface Bluetooth */
+//    SKTCaptureDeviceInterfaceTypeBluetooth = 3,
+//    /** interface Serial */
+//    SKTCaptureDeviceInterfaceTypeSerial = 4,
+//    /** interface BLE */
+//    SKTCaptureDeviceInterfaceTypeBle = 5
+//};
 
 /**
 
  @brief Capture Device product type
 
  */
-typedef NS_ENUM (NSInteger, SKTCaptureDeviceProductId) {
-    /** no product type speficied */
-    SKTCaptureDeviceProductIdNone,
-    /** product of the 7 Series */
-    SKTCaptureDeviceProductId7Series,
-    /** product of the 7x Series */
-    SKTCaptureDeviceProductId7xSeries,
-    /** product of the 9 Series */
-    SKTCaptureDeviceProductId9Series,
-    /** product of the 7xi Series */
-    SKTCaptureDeviceProductId7xiSeries,
-    /** product of SoftScan type */
-    SKTCaptureDeviceProductIdSoftScan,
-    /** product of 8ci Series */
-    SKTCaptureDeviceProductId8ciSeries,
-    /** product of 8qi Series */
-    SKTCaptureDeviceProductId8qiSeries,
-    /** product of S840 Series */
-    SKTCaptureDeviceProductIdS840Series,
-    /** product of D700 Series */
-    SKTCaptureDeviceProductIdD700Series,
-    /** product of D730 Series */
-    SKTCaptureDeviceProductIdD730Series,
-    /** product of the D740 Series */
-    SKTCaptureDeviceProductIdD740Series,
-    /** product of the D750 Series */
-    SKTCaptureDeviceProductIdD750Series,
-    /** product of the D750 Series */
-    SKTCaptureDeviceProductIdD760Series,
-    /** product of the S700 Series */
-    SKTCaptureDeviceProductIdS700Series,
-    /** product of the S730 Series */
-  	SKTCaptureDeviceProductIdS730Series,
-    /** product of the S740 Series */
-  	SKTCaptureDeviceProductIdS740Series,
-    /** product of the S750 Series */
-  	SKTCaptureDeviceProductIdS750Series,
-    /** product of the S760 Series */
-  	SKTCaptureDeviceProductIdS760Series,
-    /** product of the S860 Series */
-  	SKTCaptureDeviceProductIdS860Series,
-    /** product of the D790 Series */
-  	SKTCaptureDeviceProductIdD790Series,
-    /** product of the D600 Series */
-    SKTCaptureDeviceProductIdD600Series,
-    /** product unknown */
-    SKTCaptureDeviceProductIdUnknown
-};
+//typedef NS_ENUM (NSInteger, SKTCaptureDeviceProductId) {
+//    /** no product type speficied */
+//    SKTCaptureDeviceProductIdNone,
+//    /** product of the 7 Series */
+//    SKTCaptureDeviceProductId7Series,
+//    /** product of the 7x Series */
+//    SKTCaptureDeviceProductId7xSeries,
+//    /** product of the 9 Series */
+//    SKTCaptureDeviceProductId9Series,
+//    /** product of the 7xi Series */
+//    SKTCaptureDeviceProductId7xiSeries,
+//    /** product of SoftScan type */
+//    SKTCaptureDeviceProductIdSoftScan,
+//    /** product of 8ci Series */
+//    SKTCaptureDeviceProductId8ciSeries,
+//    /** product of 8qi Series */
+//    SKTCaptureDeviceProductId8qiSeries,
+//    /** product of S840 Series */
+//    SKTCaptureDeviceProductIdS840Series,
+//    /** product of D700 Series */
+//    SKTCaptureDeviceProductIdD700Series,
+//    /** product of D730 Series */
+//    SKTCaptureDeviceProductIdD730Series,
+//    /** product of the D740 Series */
+//    SKTCaptureDeviceProductIdD740Series,
+//    /** product of the D750 Series */
+//    SKTCaptureDeviceProductIdD750Series,
+//    /** product of the D750 Series */
+//    SKTCaptureDeviceProductIdD760Series,
+//    /** product of the S700 Series */
+//    SKTCaptureDeviceProductIdS700Series,
+//    /** product of the S730 Series */
+//  	SKTCaptureDeviceProductIdS730Series,
+//    /** product of the S740 Series */
+//  	SKTCaptureDeviceProductIdS740Series,
+//    /** product of the S750 Series */
+//  	SKTCaptureDeviceProductIdS750Series,
+//    /** product of the S760 Series */
+//  	SKTCaptureDeviceProductIdS760Series,
+//    /** product of the S860 Series */
+//  	SKTCaptureDeviceProductIdS860Series,
+//    /** product of the D790 Series */
+//  	SKTCaptureDeviceProductIdD790Series,
+//    /** product of the D600 Series */
+//    SKTCaptureDeviceProductIdD600Series,
+//    /** product unknown */
+//    SKTCaptureDeviceProductIdUnknown
+//};
 
 /**
  @brief Identifier for the Device Managers
  */
-typedef NS_ENUM (NSInteger, SKTCaptureDeviceManagerId) {
-    /** no device manager - regular device */
-    SKTCaptureDeviceManagerIdNone,
-    /** BLE device manager */
-    SKTCaptureDeviceManagerIdBle,
-    /** unknown device manager, does Capture need to be updated? */
-    SKTCaptureDeviceManagerIdUnknown
-};
+//typedef NS_ENUM (NSInteger, SKTCaptureDeviceManagerId) {
+//    /** no device manager - regular device */
+//    SKTCaptureDeviceManagerIdNone,
+//    /** BLE device manager */
+//    SKTCaptureDeviceManagerIdBle,
+//    /** unknown device manager, does Capture need to be updated? */
+//    SKTCaptureDeviceManagerIdUnknown
+//};
 
 /**
 
  @brief the device type is a combination of product type and interface
 
  */
-typedef NS_ENUM (NSInteger, SKTCaptureDeviceType) {
-    /** unknown device type */
-    SKTCaptureDeviceTypeNone = SKTCaptureDeviceTypeClassDevice<< 24 |
-    SKTCaptureDeviceInterfaceTypeNone<<16 | SKTCaptureDeviceProductIdNone,
-    /** Scanner 7 device type */
-    SKTCaptureDeviceTypeScanner7 = SKTCaptureDeviceTypeClassDevice<< 24 |
-    SKTCaptureDeviceInterfaceTypeBluetooth<<16 | SKTCaptureDeviceProductId7Series,
-    /** Scanner 7x device type */
-    SKTCaptureDeviceTypeScanner7x = SKTCaptureDeviceTypeClassDevice<< 24 |
-    SKTCaptureDeviceInterfaceTypeBluetooth<<16 | SKTCaptureDeviceProductId7xSeries,
-    /** Scanner 7xi device type */
-    SKTCaptureDeviceTypeScanner7xi = SKTCaptureDeviceTypeClassDevice<< 24 |
-    SKTCaptureDeviceInterfaceTypeBluetooth<<16 | SKTCaptureDeviceProductId7xiSeries,
-    /** Scanner 9 device type */
-    SKTCaptureDeviceTypeScanner9 = SKTCaptureDeviceTypeClassDevice<< 24 |
-    SKTCaptureDeviceInterfaceTypeBluetooth<<16 | SKTCaptureDeviceProductId9Series,
-    /** SoftScan device type */
-    SKTCaptureDeviceTypeSoftScan = SKTCaptureDeviceTypeClassDevice<< 24 |
-    SKTCaptureDeviceInterfaceTypeNone<<16 | SKTCaptureDeviceProductIdSoftScan,
-    /** Scanner 8ci device type */
-    SKTCaptureDeviceTypeScanner8ci = SKTCaptureDeviceTypeClassDevice<< 24 |
-    SKTCaptureDeviceInterfaceTypeBluetooth<<16 | SKTCaptureDeviceProductId8ciSeries,
-    /** Scanner 8qi device type */
-    SKTCaptureDeviceTypeScanner8qi = SKTCaptureDeviceTypeClassDevice<< 24 |
-    SKTCaptureDeviceInterfaceTypeBluetooth<<16 | SKTCaptureDeviceProductId8qiSeries,
-    /** Scanner S840 device type */
-    SKTCaptureDeviceTypeScannerS840 = SKTCaptureDeviceTypeClassDevice<< 24 |
-    SKTCaptureDeviceInterfaceTypeBluetooth<<16 | SKTCaptureDeviceProductIdS840Series,
-    /** Scanner D700 device type */
-    SKTCaptureDeviceTypeScannerD700 = SKTCaptureDeviceTypeClassDevice<< 24 |
-    SKTCaptureDeviceInterfaceTypeBluetooth<<16 | SKTCaptureDeviceProductIdD700Series,
-    /** Scanner D730 device type */
-    SKTCaptureDeviceTypeScannerD730 = SKTCaptureDeviceTypeClassDevice<< 24 |
-    SKTCaptureDeviceInterfaceTypeBluetooth<<16 | SKTCaptureDeviceProductIdD730Series,
-    /** Scanner D740 device type */
-    SKTCaptureDeviceTypeScannerD740 = SKTCaptureDeviceTypeClassDevice<< 24 |
-    SKTCaptureDeviceInterfaceTypeBluetooth<<16 | SKTCaptureDeviceProductIdD740Series,
-    /** Scanner D750 device type */
-    SKTCaptureDeviceTypeScannerD750 = SKTCaptureDeviceTypeClassDevice<< 24 |
-    SKTCaptureDeviceInterfaceTypeBluetooth<<16 | SKTCaptureDeviceProductIdD750Series,
-    /** Scanner D760 device type */
-    SKTCaptureDeviceTypeScannerD760 = SKTCaptureDeviceTypeClassDevice<< 24 |
-    SKTCaptureDeviceInterfaceTypeBluetooth<<16 | SKTCaptureDeviceProductIdD760Series,
-    /** Scanner S700 device type */
-    SKTCaptureDeviceTypeScannerS700 = SKTCaptureDeviceTypeClassDevice<< 24 |
-    SKTCaptureDeviceInterfaceTypeBluetooth<<16 | SKTCaptureDeviceProductIdS700Series,
-    /** Scanner S730 device type */
-    SKTCaptureDeviceTypeScannerS730 = SKTCaptureDeviceTypeClassDevice<< 24 |
-    SKTCaptureDeviceInterfaceTypeBluetooth<<16 | SKTCaptureDeviceProductIdS730Series,
-    /** Scanner S740 device type */
-    SKTCaptureDeviceTypeScannerS740 = SKTCaptureDeviceTypeClassDevice<< 24 |
-    SKTCaptureDeviceInterfaceTypeBluetooth<<16 | SKTCaptureDeviceProductIdS740Series,
-    /** Scanner S750 device type */
-    SKTCaptureDeviceTypeScannerS750 = SKTCaptureDeviceTypeClassDevice<< 24 |
-    SKTCaptureDeviceInterfaceTypeBluetooth<<16 | SKTCaptureDeviceProductIdS750Series,
-    /** Scanner S760 device type */
-    SKTCaptureDeviceTypeScannerS760 = SKTCaptureDeviceTypeClassDevice<< 24 |
-    SKTCaptureDeviceInterfaceTypeBluetooth<<16 | SKTCaptureDeviceProductIdS760Series,
-    /** Scanner S860 device type */
-    SKTCaptureDeviceTypeScannerS860 = SKTCaptureDeviceTypeClassDevice<< 24 |
-    SKTCaptureDeviceInterfaceTypeBluetooth<<16 | SKTCaptureDeviceProductIdS860Series,
-    /** Scanner D790 device type */
-    SKTCaptureDeviceTypeScannerD790 = SKTCaptureDeviceTypeClassDevice<< 24 |
-    SKTCaptureDeviceInterfaceTypeBluetooth<<16 | SKTCaptureDeviceProductIdD790Series,
-    /** Scanner D600 device type */
-    SKTCaptureDeviceTypeScannerD600 = SKTCaptureDeviceTypeClassDevice<<24 |
-    SKTCaptureDeviceInterfaceTypeBle<<16 | SKTCaptureDeviceProductIdD600Series,
-
-    // device Manager
-    /** BLE Device Manager type */
-    SKTCaptureDeviceManagerTypeBle = SKTCaptureDeviceTypeClassDeviceManager<<24 |
-    SKTCaptureDeviceInterfaceTypeBle<<16 | SKTCaptureDeviceManagerIdBle,
-
-};
+//typedef NS_ENUM (NSInteger, SKTCaptureDeviceType) {
+//    /** unknown device type */
+//    SKTCaptureDeviceTypeNone = SKTCaptureDeviceTypeClassDevice<< 24 |
+//    SKTCaptureDeviceInterfaceTypeNone<<16 | SKTCaptureDeviceProductIdNone,
+//    /** Scanner 7 device type */
+//    SKTCaptureDeviceTypeScanner7 = SKTCaptureDeviceTypeClassDevice<< 24 |
+//    SKTCaptureDeviceInterfaceTypeBluetooth<<16 | SKTCaptureDeviceProductId7Series,
+//    /** Scanner 7x device type */
+//    SKTCaptureDeviceTypeScanner7x = SKTCaptureDeviceTypeClassDevice<< 24 |
+//    SKTCaptureDeviceInterfaceTypeBluetooth<<16 | SKTCaptureDeviceProductId7xSeries,
+//    /** Scanner 7xi device type */
+//    SKTCaptureDeviceTypeScanner7xi = SKTCaptureDeviceTypeClassDevice<< 24 |
+//    SKTCaptureDeviceInterfaceTypeBluetooth<<16 | SKTCaptureDeviceProductId7xiSeries,
+//    /** Scanner 9 device type */
+//    SKTCaptureDeviceTypeScanner9 = SKTCaptureDeviceTypeClassDevice<< 24 |
+//    SKTCaptureDeviceInterfaceTypeBluetooth<<16 | SKTCaptureDeviceProductId9Series,
+//    /** SoftScan device type */
+//    SKTCaptureDeviceTypeSoftScan = SKTCaptureDeviceTypeClassDevice<< 24 |
+//    SKTCaptureDeviceInterfaceTypeNone<<16 | SKTCaptureDeviceProductIdSoftScan,
+//    /** Scanner 8ci device type */
+//    SKTCaptureDeviceTypeScanner8ci = SKTCaptureDeviceTypeClassDevice<< 24 |
+//    SKTCaptureDeviceInterfaceTypeBluetooth<<16 | SKTCaptureDeviceProductId8ciSeries,
+//    /** Scanner 8qi device type */
+//    SKTCaptureDeviceTypeScanner8qi = SKTCaptureDeviceTypeClassDevice<< 24 |
+//    SKTCaptureDeviceInterfaceTypeBluetooth<<16 | SKTCaptureDeviceProductId8qiSeries,
+//    /** Scanner S840 device type */
+//    SKTCaptureDeviceTypeScannerS840 = SKTCaptureDeviceTypeClassDevice<< 24 |
+//    SKTCaptureDeviceInterfaceTypeBluetooth<<16 | SKTCaptureDeviceProductIdS840Series,
+//    /** Scanner D700 device type */
+//    SKTCaptureDeviceTypeScannerD700 = SKTCaptureDeviceTypeClassDevice<< 24 |
+//    SKTCaptureDeviceInterfaceTypeBluetooth<<16 | SKTCaptureDeviceProductIdD700Series,
+//    /** Scanner D730 device type */
+//    SKTCaptureDeviceTypeScannerD730 = SKTCaptureDeviceTypeClassDevice<< 24 |
+//    SKTCaptureDeviceInterfaceTypeBluetooth<<16 | SKTCaptureDeviceProductIdD730Series,
+//    /** Scanner D740 device type */
+//    SKTCaptureDeviceTypeScannerD740 = SKTCaptureDeviceTypeClassDevice<< 24 |
+//    SKTCaptureDeviceInterfaceTypeBluetooth<<16 | SKTCaptureDeviceProductIdD740Series,
+//    /** Scanner D750 device type */
+//    SKTCaptureDeviceTypeScannerD750 = SKTCaptureDeviceTypeClassDevice<< 24 |
+//    SKTCaptureDeviceInterfaceTypeBluetooth<<16 | SKTCaptureDeviceProductIdD750Series,
+//    /** Scanner D760 device type */
+//    SKTCaptureDeviceTypeScannerD760 = SKTCaptureDeviceTypeClassDevice<< 24 |
+//    SKTCaptureDeviceInterfaceTypeBluetooth<<16 | SKTCaptureDeviceProductIdD760Series,
+//    /** Scanner S700 device type */
+//    SKTCaptureDeviceTypeScannerS700 = SKTCaptureDeviceTypeClassDevice<< 24 |
+//    SKTCaptureDeviceInterfaceTypeBluetooth<<16 | SKTCaptureDeviceProductIdS700Series,
+//    /** Scanner S730 device type */
+//    SKTCaptureDeviceTypeScannerS730 = SKTCaptureDeviceTypeClassDevice<< 24 |
+//    SKTCaptureDeviceInterfaceTypeBluetooth<<16 | SKTCaptureDeviceProductIdS730Series,
+//    /** Scanner S740 device type */
+//    SKTCaptureDeviceTypeScannerS740 = SKTCaptureDeviceTypeClassDevice<< 24 |
+//    SKTCaptureDeviceInterfaceTypeBluetooth<<16 | SKTCaptureDeviceProductIdS740Series,
+//    /** Scanner S750 device type */
+//    SKTCaptureDeviceTypeScannerS750 = SKTCaptureDeviceTypeClassDevice<< 24 |
+//    SKTCaptureDeviceInterfaceTypeBluetooth<<16 | SKTCaptureDeviceProductIdS750Series,
+//    /** Scanner S760 device type */
+//    SKTCaptureDeviceTypeScannerS760 = SKTCaptureDeviceTypeClassDevice<< 24 |
+//    SKTCaptureDeviceInterfaceTypeBluetooth<<16 | SKTCaptureDeviceProductIdS760Series,
+//    /** Scanner S860 device type */
+//    SKTCaptureDeviceTypeScannerS860 = SKTCaptureDeviceTypeClassDevice<< 24 |
+//    SKTCaptureDeviceInterfaceTypeBluetooth<<16 | SKTCaptureDeviceProductIdS860Series,
+//    /** Scanner D790 device type */
+//    SKTCaptureDeviceTypeScannerD790 = SKTCaptureDeviceTypeClassDevice<< 24 |
+//    SKTCaptureDeviceInterfaceTypeBluetooth<<16 | SKTCaptureDeviceProductIdD790Series,
+//    /** Scanner D600 device type */
+//    SKTCaptureDeviceTypeScannerD600 = SKTCaptureDeviceTypeClassDevice<<24 |
+//    SKTCaptureDeviceInterfaceTypeBle<<16 | SKTCaptureDeviceProductIdD600Series,
+//
+//    // device Manager
+//    /** BLE Device Manager type */
+//    SKTCaptureDeviceManagerTypeBle = SKTCaptureDeviceTypeClassDeviceManager<<24 |
+//    SKTCaptureDeviceInterfaceTypeBle<<16 | SKTCaptureDeviceManagerIdBle,
+//
+//};
 
 /**
 

@@ -377,25 +377,25 @@ typedef NS_ENUM(NSInteger, SKTCaptureErrors) {
 
 	/**
 	The profile file causes a conflict
-	THIS ERROR IS DEPREACTED
+	THIS ERROR IS DEPRECATED
 	*/
 	SKTCaptureE_CONFLICTPROFILE = -80,
 
 	/**
 	The current profile cannot be deleted
-	THIS ERROR IS DEPREACTED
+	THIS ERROR IS DEPRECATED
 	*/
 	SKTCaptureE_DELETECURRENTPROFILE = -81,
 
 	/**
 	Data editing cannot be initialized
-	THIS ERROR IS DEPREACTED
+	THIS ERROR IS DEPRECATED
 	*/
 	SKTCaptureE_UNABLEINITIALIZEDATAEDITING = -82,
 
 	/**
 	The data editing operation is invalid
-	THIS ERROR IS DEPREACTED
+	THIS ERROR IS DEPRECATED
 	*/
 	SKTCaptureE_UNKNOWNDATAEDITINGOPERATION = -83,
 
