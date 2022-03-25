@@ -46,15 +46,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		KKq8y8WSIpfcN1pCloIZvtPxoBs=
+		i8aSLz4XcZD0Y5ZP04n39PcZtz0=
 		</data>
 		<key>Modules/SKTCapture.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		6zF2lpRLsG0hJwAmAcdiubM/+84=
+		8L4rLjzNB7THt4W1EVQkfqjGs7A=
 		</data>
 		<key>Modules/SKTCapture.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<data>
-		6zF2lpRLsG0hJwAmAcdiubM/+84=
+		8L4rLjzNB7THt4W1EVQkfqjGs7A=
 		</data>
 		<key>Modules/SKTCapture.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -62,11 +62,11 @@
 		</data>
 		<key>Modules/SKTCapture.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		8vT5GXyiH/E9AvH2kpqITQCsA0M=
+		NDj+5aOJP8MBErlZuWvKn8TXUQw=
 		</data>
 		<key>Modules/SKTCapture.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		2XQJAdiWYUMXb55kwwmnDLEoEvU=
+		PQ+nJ9mHuWPxFtntYyxGghnk1g0=
 		</data>
 		<key>Modules/SKTCapture.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -74,11 +74,11 @@
 		</data>
 		<key>Modules/SKTCapture.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		8vT5GXyiH/E9AvH2kpqITQCsA0M=
+		NDj+5aOJP8MBErlZuWvKn8TXUQw=
 		</data>
 		<key>Modules/SKTCapture.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		2XQJAdiWYUMXb55kwwmnDLEoEvU=
+		PQ+nJ9mHuWPxFtntYyxGghnk1g0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -201,22 +201,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6zF2lpRLsG0hJwAmAcdiubM/+84=
+			8L4rLjzNB7THt4W1EVQkfqjGs7A=
 			</data>
 			<key>hash2</key>
 			<data>
-			NNX5NMzpZPpIv7/IgyEIaMGAlOZaaiUVyZDJbZfLyKQ=
+			dspijXwsaswV33KGvWaFm078u8X2hwrxt7shOmZFf2Y=
 			</data>
 		</dict>
 		<key>Modules/SKTCapture.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6zF2lpRLsG0hJwAmAcdiubM/+84=
+			8L4rLjzNB7THt4W1EVQkfqjGs7A=
 			</data>
 			<key>hash2</key>
 			<data>
-			NNX5NMzpZPpIv7/IgyEIaMGAlOZaaiUVyZDJbZfLyKQ=
+			dspijXwsaswV33KGvWaFm078u8X2hwrxt7shOmZFf2Y=
 			</data>
 		</dict>
 		<key>Modules/SKTCapture.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -234,22 +234,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8vT5GXyiH/E9AvH2kpqITQCsA0M=
+			NDj+5aOJP8MBErlZuWvKn8TXUQw=
 			</data>
 			<key>hash2</key>
 			<data>
-			LxLi/sBwIslVVTClmA0So96PrT+HlNpVBrgLqGIZQk8=
+			G2+KLevuVMZ0kmCX33y0NbUSDHdHYVTFUf9LyUZJQUE=
 			</data>
 		</dict>
 		<key>Modules/SKTCapture.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2XQJAdiWYUMXb55kwwmnDLEoEvU=
+			PQ+nJ9mHuWPxFtntYyxGghnk1g0=
 			</data>
 			<key>hash2</key>
 			<data>
-			fAfyd9C6MeNVn0oAaHyLOfkgCg7rLbsv/NVw8+rw/Jg=
+			vULHJ5OVXwb+RB4Ou7+Y5542M+GUfBPfN6+P3VvXVmI=
 			</data>
 		</dict>
 		<key>Modules/SKTCapture.swiftmodule/x86_64.swiftdoc</key>
@@ -267,22 +267,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8vT5GXyiH/E9AvH2kpqITQCsA0M=
+			NDj+5aOJP8MBErlZuWvKn8TXUQw=
 			</data>
 			<key>hash2</key>
 			<data>
-			LxLi/sBwIslVVTClmA0So96PrT+HlNpVBrgLqGIZQk8=
+			G2+KLevuVMZ0kmCX33y0NbUSDHdHYVTFUf9LyUZJQUE=
 			</data>
 		</dict>
 		<key>Modules/SKTCapture.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2XQJAdiWYUMXb55kwwmnDLEoEvU=
+			PQ+nJ9mHuWPxFtntYyxGghnk1g0=
 			</data>
 			<key>hash2</key>
 			<data>
-			fAfyd9C6MeNVn0oAaHyLOfkgCg7rLbsv/NVw8+rw/Jg=
+			vULHJ5OVXwb+RB4Ou7+Y5542M+GUfBPfN6+P3VvXVmI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
