@@ -6,23 +6,27 @@
 	<dict>
 		<key>Headers/SKTCapture-Swift.h</key>
 		<data>
-		B5MaESr27ynvlRvuRmYGVLcUhE4=
+		2msB8z3bwt/2pcoGzVNUmYlQqPU=
 		</data>
 		<key>Headers/SKTCapture-umbrella.h</key>
 		<data>
-		OKmfPOGNJCqXHrYhWFCuFIRdrUc=
+		VdDiCbHo6K2nr3xfCnh0Fl4RH2M=
 		</data>
 		<key>Headers/SKTCapture.h</key>
 		<data>
-		TRwls5ItMGo9IeyU+/PV3dTPViI=
+		qf7y91M9gOnMFK51IoprUkxJaIc=
 		</data>
 		<key>Headers/SktCaptureDataSource.h</key>
 		<data>
-		ebeDx5uccTIxGR2DVmLG0tqgRPk=
+		AZ+7yQ6YBc4RP8YQ+qJjQTbnZk0=
+		</data>
+		<key>Headers/SktCaptureDeviceTypes.h</key>
+		<data>
+		lKrJ+rqIiNwHBxYDh75kT/G4a48=
 		</data>
 		<key>Headers/SktCaptureErrors.h</key>
 		<data>
-		smzSc0hF7rDQAQLY1eDPInbSZSM=
+		xcIBEG25REqeyLoV3pVRBWWcfWo=
 		</data>
 		<key>Headers/SktCaptureEvent.h</key>
 		<data>
@@ -30,7 +34,7 @@
 		</data>
 		<key>Headers/SktCaptureProperty.h</key>
 		<data>
-		QR9aSQPsDeX7ljpWu+Zk4cOrhaM=
+		er/Mi7T/a69rgy+SzlE6uj1V38Q=
 		</data>
 		<key>Headers/SktCapturePropertyIds.h</key>
 		<data>
@@ -42,51 +46,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		VptaEA8PtF5sBFb+EQHEROOhq38=
+		gqgsJ7Rn3H81PY6yLBVwe3qzkkQ=
 		</data>
-		<key>Modules/SKTCapture.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/SKTCapture.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		ArGgPf5FUcTzkg/kw4ppHEf7at0=
+		upA9+eTkzOG9GePaePJL2R/S69I=
 		</data>
-		<key>Modules/SKTCapture.swiftmodule/Project/x86_64.swiftsourceinfo</key>
+		<key>Modules/SKTCapture.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		ArGgPf5FUcTzkg/kw4ppHEf7at0=
+		h7ogRZaVNW3hynATtTGgbwnbyjc=
 		</data>
-		<key>Modules/SKTCapture.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/SKTCapture.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		PilhxAR8TYgkWxroUgInGJ+ZnOI=
+		oF5xWe1LcRzxJxdkQJpXWKV61UM=
 		</data>
-		<key>Modules/SKTCapture.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<key>Modules/SKTCapture.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		BXldXx8no5bdFyE5L4UP7Q6a67Q=
-		</data>
-		<key>Modules/SKTCapture.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
-		<data>
-		ZxEAT069rxj0wFQk2d+5ckNvW1g=
-		</data>
-		<key>Modules/SKTCapture.swiftmodule/x86_64.swiftdoc</key>
-		<data>
-		PilhxAR8TYgkWxroUgInGJ+ZnOI=
-		</data>
-		<key>Modules/SKTCapture.swiftmodule/x86_64.swiftinterface</key>
-		<data>
-		BXldXx8no5bdFyE5L4UP7Q6a67Q=
-		</data>
-		<key>Modules/SKTCapture.swiftmodule/x86_64.swiftmodule</key>
-		<data>
-		ZxEAT069rxj0wFQk2d+5ckNvW1g=
+		zXbkQHNUhEQ9VxSdInBHyx+0vd4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		fPfs1w4VRvbAott0Y+tgJUgCwQc=
-		</data>
-		<key>socketmobilepublickey.pem</key>
-		<data>
-		9Vu9LczBQ8N2Vn7p+HmvX+qC7n0=
-		</data>
-		<key>softScanBeep.wav</key>
-		<data>
-		FYJSrok9xGwhE4BF5LjM7cOerz8=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -95,55 +75,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			B5MaESr27ynvlRvuRmYGVLcUhE4=
+			2msB8z3bwt/2pcoGzVNUmYlQqPU=
 			</data>
 			<key>hash2</key>
 			<data>
-			uPAcSbG+JVuMAfRjIDT/wqd5P7opazMMsMk4cn+kGaA=
+			BiwbZf8+FvIvbp8OAurBF1AuhXzsv+AqWjaqSIFJlJU=
 			</data>
 		</dict>
 		<key>Headers/SKTCapture-umbrella.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OKmfPOGNJCqXHrYhWFCuFIRdrUc=
+			VdDiCbHo6K2nr3xfCnh0Fl4RH2M=
 			</data>
 			<key>hash2</key>
 			<data>
-			bZv5ddMXNw8XHOVwEh9dYgLcXO4L3m6hdv+pGHvywGg=
+			lAYtMI5/1/sNhLELn8hjNvGHtrS2r/1yHz5kO/UNejc=
 			</data>
 		</dict>
 		<key>Headers/SKTCapture.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			TRwls5ItMGo9IeyU+/PV3dTPViI=
+			qf7y91M9gOnMFK51IoprUkxJaIc=
 			</data>
 			<key>hash2</key>
 			<data>
-			rz8nvnwA33vO8QUK/N8api4UgvN+vDnFmSoe3O8ponU=
+			hHYK853tZZ7f7bQh798gH6DZN43K+uK+y6vokajTAJM=
 			</data>
 		</dict>
 		<key>Headers/SktCaptureDataSource.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ebeDx5uccTIxGR2DVmLG0tqgRPk=
+			AZ+7yQ6YBc4RP8YQ+qJjQTbnZk0=
 			</data>
 			<key>hash2</key>
 			<data>
-			1EOiPOGAgusXYqVnJP3SzPc3Z1pI8pE/WGmnEcZMSuE=
+			ILZ2qEEDWM1wowbVMpRV7sK6d3gg7N+eTebXOkGkQsc=
+			</data>
+		</dict>
+		<key>Headers/SktCaptureDeviceTypes.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lKrJ+rqIiNwHBxYDh75kT/G4a48=
+			</data>
+			<key>hash2</key>
+			<data>
+			xl+cwn/Yeyb8u1epYtXH8V/dZZlp/7HqNW+4urX2rXM=
 			</data>
 		</dict>
 		<key>Headers/SktCaptureErrors.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			smzSc0hF7rDQAQLY1eDPInbSZSM=
+			xcIBEG25REqeyLoV3pVRBWWcfWo=
 			</data>
 			<key>hash2</key>
 			<data>
-			slgJc7DqLCCF7hAgYnJqROiqyV8w0/a+EwFQWXE+ZpU=
+			V4OcyLT8h4qoK1Y0D1g7fGrsPaBoJKOnRLkLfkTxn1I=
 			</data>
 		</dict>
 		<key>Headers/SktCaptureEvent.h</key>
@@ -161,11 +152,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QR9aSQPsDeX7ljpWu+Zk4cOrhaM=
+			er/Mi7T/a69rgy+SzlE6uj1V38Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			vyZwzc92TFd0fZ4mZnjjrU/K4gygsZyUfdebchPMQ6Q=
+			37j+lcH/MFObpwPWeUSpPAq6kLbEWfMojFjhQke6RLw=
 			</data>
 		</dict>
 		<key>Headers/SktCapturePropertyIds.h</key>
@@ -190,92 +181,48 @@
 			0IHWAxo9214uxeaHsAqtl+yM87QTck8hrBlMEeuVG4o=
 			</data>
 		</dict>
-		<key>Modules/SKTCapture.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/SKTCapture.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ArGgPf5FUcTzkg/kw4ppHEf7at0=
+			upA9+eTkzOG9GePaePJL2R/S69I=
 			</data>
 			<key>hash2</key>
 			<data>
-			r8d1nYUZ2LPL8JUJ/p+MVpBc4InA9ExkC+2VIyWS2v0=
+			MuJWuSJcD9LiG9UC5CgKZuO0T6k5MaVu+quS9ZQs+Sc=
 			</data>
 		</dict>
-		<key>Modules/SKTCapture.swiftmodule/Project/x86_64.swiftsourceinfo</key>
+		<key>Modules/SKTCapture.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ArGgPf5FUcTzkg/kw4ppHEf7at0=
+			h7ogRZaVNW3hynATtTGgbwnbyjc=
 			</data>
 			<key>hash2</key>
 			<data>
-			r8d1nYUZ2LPL8JUJ/p+MVpBc4InA9ExkC+2VIyWS2v0=
+			OdWSi+eXLXOTaHlRSRNNrdM/GVGIgOnwXdsey+X3Y7s=
 			</data>
 		</dict>
-		<key>Modules/SKTCapture.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/SKTCapture.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PilhxAR8TYgkWxroUgInGJ+ZnOI=
+			oF5xWe1LcRzxJxdkQJpXWKV61UM=
 			</data>
 			<key>hash2</key>
 			<data>
-			fS487pHHxCAACt7sBGvGpWa3BxbFDUj9xTkCf+rpGI0=
+			P3CaWL2axnoIvjGXBIUiGvT0Wf4XgMF75Usj1Oos7uw=
 			</data>
 		</dict>
-		<key>Modules/SKTCapture.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<key>Modules/SKTCapture.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BXldXx8no5bdFyE5L4UP7Q6a67Q=
+			zXbkQHNUhEQ9VxSdInBHyx+0vd4=
 			</data>
 			<key>hash2</key>
 			<data>
-			BXiHqZomh/xgdJ2s53zZYYIizVX/yTLEoA/EeBDsqZw=
-			</data>
-		</dict>
-		<key>Modules/SKTCapture.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ZxEAT069rxj0wFQk2d+5ckNvW1g=
-			</data>
-			<key>hash2</key>
-			<data>
-			hI2oM6HS+iasfQRVB8dnkDZQXgNwXg21u7l7wGuUtcc=
-			</data>
-		</dict>
-		<key>Modules/SKTCapture.swiftmodule/x86_64.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			PilhxAR8TYgkWxroUgInGJ+ZnOI=
-			</data>
-			<key>hash2</key>
-			<data>
-			fS487pHHxCAACt7sBGvGpWa3BxbFDUj9xTkCf+rpGI0=
-			</data>
-		</dict>
-		<key>Modules/SKTCapture.swiftmodule/x86_64.swiftinterface</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			BXldXx8no5bdFyE5L4UP7Q6a67Q=
-			</data>
-			<key>hash2</key>
-			<data>
-			BXiHqZomh/xgdJ2s53zZYYIizVX/yTLEoA/EeBDsqZw=
-			</data>
-		</dict>
-		<key>Modules/SKTCapture.swiftmodule/x86_64.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ZxEAT069rxj0wFQk2d+5ckNvW1g=
-			</data>
-			<key>hash2</key>
-			<data>
-			hI2oM6HS+iasfQRVB8dnkDZQXgNwXg21u7l7wGuUtcc=
+			Srr6HeV5fwgLRZoHGwz+VmQ0l5JBKPkzAmUhH5BO2BQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -287,28 +234,6 @@
 			<key>hash2</key>
 			<data>
 			M/xHIEia5sDF1irFkp0MhNQbaxscMTvDeLci2oh2UI4=
-			</data>
-		</dict>
-		<key>socketmobilepublickey.pem</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			9Vu9LczBQ8N2Vn7p+HmvX+qC7n0=
-			</data>
-			<key>hash2</key>
-			<data>
-			B9PjQkfOkj7eQ3BXkHPfJjSfax4lnTFZHKe/T0B4bJ8=
-			</data>
-		</dict>
-		<key>softScanBeep.wav</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			FYJSrok9xGwhE4BF5LjM7cOerz8=
-			</data>
-			<key>hash2</key>
-			<data>
-			98SWf9Q6wda21vQ/97vYkBD1PbA8KkyvapWuxXyibaQ=
 			</data>
 		</dict>
 	</dict>

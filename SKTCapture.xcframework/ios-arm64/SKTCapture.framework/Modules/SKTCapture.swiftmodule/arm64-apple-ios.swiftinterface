@@ -1,103 +1,103 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5 effective-4.1.50 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
-// swift-module-flags: -target arm64-apple-ios9.1 -enable-objc-interop -enable-library-evolution -swift-version 4 -enforce-exclusivity=checked -O -module-name SKTCapture
+// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
+// swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SKTCapture
 import Foundation
 @_exported import SKTCapture
 import Swift
 import _Concurrency
 public protocol CaptureHelperDelegate {
 }
-public protocol CaptureHelperErrorDelegate : CaptureHelperDelegate {
-  func didReceiveError(_ error: SKTResult)
+public protocol CaptureHelperErrorDelegate : SKTCapture.CaptureHelperDelegate {
+  func didReceiveError(_ error: SKTCapture.SKTResult)
 }
-public protocol CaptureHelperDevicePresenceDelegate : CaptureHelperDelegate {
-  func didNotifyArrivalForDevice(_ device: CaptureHelperDevice, withResult result: SKTResult)
-  func didNotifyRemovalForDevice(_ device: CaptureHelperDevice, withResult result: SKTResult)
+public protocol CaptureHelperDevicePresenceDelegate : SKTCapture.CaptureHelperDelegate {
+  func didNotifyArrivalForDevice(_ device: SKTCapture.CaptureHelperDevice, withResult result: SKTCapture.SKTResult)
+  func didNotifyRemovalForDevice(_ device: SKTCapture.CaptureHelperDevice, withResult result: SKTCapture.SKTResult)
 }
-public protocol CaptureHelperDeviceManagerPresenceDelegate : CaptureHelperDelegate {
-  func didNotifyArrivalForDeviceManager(_ device: CaptureHelperDeviceManager, withResult result: SKTResult)
-  func didNotifyRemovalForDeviceManager(_ device: CaptureHelperDeviceManager, withResult result: SKTResult)
+public protocol CaptureHelperDeviceManagerPresenceDelegate : SKTCapture.CaptureHelperDelegate {
+  func didNotifyArrivalForDeviceManager(_ device: SKTCapture.CaptureHelperDeviceManager, withResult result: SKTCapture.SKTResult)
+  func didNotifyRemovalForDeviceManager(_ device: SKTCapture.CaptureHelperDeviceManager, withResult result: SKTCapture.SKTResult)
 }
-public protocol CaptureHelperDeviceManagerDiscoveryDelegate : CaptureHelperDelegate {
-  func didDiscoverDevice(_ device: Swift.String, fromDeviceManager deviceManager: CaptureHelperDeviceManager)
-  func didEndDiscoveryWithResult(_ result: SKTResult, fromDeviceManager deviceManager: CaptureHelperDeviceManager)
+public protocol CaptureHelperDeviceManagerDiscoveryDelegate : SKTCapture.CaptureHelperDelegate {
+  func didDiscoverDevice(_ device: Swift.String, fromDeviceManager deviceManager: SKTCapture.CaptureHelperDeviceManager)
+  func didEndDiscoveryWithResult(_ result: SKTCapture.SKTResult, fromDeviceManager deviceManager: SKTCapture.CaptureHelperDeviceManager)
 }
-public protocol CaptureHelperDeviceDecodedDataDelegate : CaptureHelperDelegate {
-  func didReceiveDecodedData(_ decodedData: SKTCaptureDecodedData?, fromDevice device: CaptureHelperDevice, withResult result: SKTResult)
+public protocol CaptureHelperDeviceDecodedDataDelegate : SKTCapture.CaptureHelperDelegate {
+  func didReceiveDecodedData(_ decodedData: SKTCapture.SKTCaptureDecodedData?, fromDevice device: SKTCapture.CaptureHelperDevice, withResult result: SKTCapture.SKTResult)
 }
-public protocol CaptureHelperDevicePowerDelegate : CaptureHelperDelegate {
-  func didChangePowerState(_ powerState: SKTCapturePowerState, forDevice device: CaptureHelperDevice)
-  func didChangeBatteryLevel(_ batteryLevel: Swift.Int, forDevice device: CaptureHelperDevice)
+public protocol CaptureHelperDevicePowerDelegate : SKTCapture.CaptureHelperDelegate {
+  func didChangePowerState(_ powerState: SKTCapture.SKTCapturePowerState, forDevice device: SKTCapture.CaptureHelperDevice)
+  func didChangeBatteryLevel(_ batteryLevel: Swift.Int, forDevice device: SKTCapture.CaptureHelperDevice)
 }
-public protocol CaptureHelperDeviceButtonsDelegate : CaptureHelperDelegate {
-  func didChangeButtonsState(_ buttonsState: SKTCaptureButtonsState, forDevice device: CaptureHelperDevice)
+public protocol CaptureHelperDeviceButtonsDelegate : SKTCapture.CaptureHelperDelegate {
+  func didChangeButtonsState(_ buttonsState: SKTCapture.SKTCaptureButtonsState, forDevice device: SKTCapture.CaptureHelperDevice)
 }
-public protocol CaptureHelperAllDelegate : CaptureHelperDeviceButtonsDelegate, CaptureHelperDeviceDecodedDataDelegate, CaptureHelperDeviceManagerPresenceDelegate, CaptureHelperDevicePowerDelegate, CaptureHelperDevicePresenceDelegate, CaptureHelperErrorDelegate {
+public protocol CaptureHelperAllDelegate : SKTCapture.CaptureHelperDeviceButtonsDelegate, SKTCapture.CaptureHelperDeviceDecodedDataDelegate, SKTCapture.CaptureHelperDeviceManagerPresenceDelegate, SKTCapture.CaptureHelperDevicePowerDelegate, SKTCapture.CaptureHelperDevicePresenceDelegate, SKTCapture.CaptureHelperErrorDelegate {
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class CaptureHelperDevice : ObjectiveC.NSObject {
   public var extensionProperties: Swift.Dictionary<Swift.String, Any>
-  public var deviceInfo: SKTCaptureDeviceInfo
+  public var deviceInfo: SKTCapture.SKTCaptureDeviceInfo
   public var dispatchQueue: Dispatch.DispatchQueue?
-  open func getFriendlyNameWithCompletionHandler(_ completion: @escaping (_ result: SKTResult, _ name: Swift.String?) -> Swift.Void)
-  open func setFriendlyName(_ name: Swift.String, withCompletionHandler completion: @escaping (_ result: SKTResult) -> Swift.Void)
-  open func getBluetoothAddressWithCompletionHandler(_ completion: @escaping (_ result: SKTResult, _ bluetoothAddress: Foundation.Data?) -> Swift.Void)
-  open func getTypeWithCompletionHandler(_ completion: @escaping (_ result: SKTResult, _ deviceType: Swift.UInt?) -> Swift.Void)
-  open func getFirmwareVersionWithCompletionHandler(_ completion: @escaping (_ result: SKTResult, _ version: SKTCaptureVersion?) -> Swift.Void)
-  open func getBatteryLevelWithCompletionHandler(_ completion: @escaping (_ result: SKTResult, _ batteryLevel: Swift.UInt?) -> Swift.Void)
-  open func getPowerStateWithCompletionHandler(_ completion: @escaping (_ result: SKTResult, _ powerState: Swift.UInt?) -> Swift.Void)
-  open func getButtonsStateWithCompletionHandler(_ completion: @escaping (_ result: SKTResult, _ buttonsState: SKTCaptureButtonsState?) -> Swift.Void)
-  open func getStandConfigWithCompletionHandler(_ completion: @escaping (_ result: SKTResult, _ config: SKTCaptureStandConfig?) -> Swift.Void)
-  open func setStandConfig(_ config: SKTCaptureStandConfig, withCompletionHandler completion: @escaping (_ result: SKTResult) -> Swift.Void)
-  open func getDecodeActionWithCompletionHandler(_ completion: @escaping (_ result: SKTResult, _ decodeAction: SKTCaptureLocalDecodeAction?) -> Swift.Void)
-  open func setDecodeAction(_ decodeAction: SKTCaptureLocalDecodeAction, withCompletionHandler completion: @escaping (_ result: SKTResult) -> Swift.Void)
-  open func getDataAcknowledgmentWithCompletionHandler(_ completion: @escaping (_ result: SKTResult, _ dataAcknownledgement: SKTCaptureDeviceDataAcknowledgment?) -> Swift.Void)
-  open func setDataAcknowledgment(_ dataAcknowledgment: SKTCaptureDeviceDataAcknowledgment, withCompletionHandler completion: @escaping (_ result: SKTResult) -> Swift.Void)
-  open func getPostambleWithCompletionHandler(_ completion: @escaping (_ result: SKTResult, _ postamble: Swift.String?) -> Swift.Void)
-  open func setPostamble(_ postamble: Swift.String, withCompletionHandler completion: @escaping (_ result: SKTResult) -> Swift.Void)
-  open func getDataSourceInfoFromId(_ dataSourceId: SKTCaptureDataSourceID, withCompletionHandler completion: @escaping (_ result: SKTResult, _ dataSourceInfo: SKTCaptureDataSource?) -> Swift.Void)
-  open func setDataSourceInfo(_ dataSource: SKTCaptureDataSource, withCompletionHandler completion: @escaping (_ result: SKTResult) -> Swift.Void)
-  open func setTrigger(_ trigger: SKTCaptureTrigger, withCompletionHandler completion: @escaping (_ result: SKTResult) -> Swift.Void)
-  open func setDataConfirmationWithLed(_ led: SKTCaptureDataConfirmationLed, withBeep beep: SKTCaptureDataConfirmationBeep, withRumble rumble: SKTCaptureDataConfirmationRumble, withCompletionHandler completion: @escaping (_ result: SKTResult) -> Swift.Void)
-  open func setNotifications(_ notifications: SKTCaptureNotifications, withCompletionHandler completion: @escaping (_ result: SKTResult) -> Swift.Void)
-  open func getNotificationsWithCompletionHandler(_ completion: @escaping (_ result: SKTResult, _ notifications: SKTCaptureNotifications?) -> Swift.Void)
-  open func setSoftScanOverlayViewParameter(_ parameters: Swift.Dictionary<Swift.String, Any>, withCompletionHandler completion: @escaping (_ result: SKTResult) -> Swift.Void)
-  open func getSoftScanOverlayViewParameterWithCompletionHandler(_ completion: @escaping (_ result: SKTResult, _ parameter: Swift.Dictionary<Swift.String, Any>?) -> Swift.Void)
-  open func getDeviceSpecificCommand(_ command: Foundation.Data, withCompletionHandler completion: @escaping (_ result: SKTResult, _ commandResult: Foundation.Data?) -> Swift.Void)
-  open func setDataFormat(dataFormat: SKTCaptureDataFormat, completion: @escaping (_ result: SKTResult) -> Swift.Void)
-  open func getDataFormatWithCompletionHandler(_ completion: @escaping (_ result: SKTResult, _ dataFormat: SKTCaptureDataFormat?) -> Swift.Void)
-  open func getProperty(_ property: SKTCaptureProperty, withCompletionHandler completion: @escaping (_ result: SKTResult, _ complete: SKTCaptureProperty?) -> Swift.Void)
-  open func setProperty(_ property: SKTCaptureProperty, withCompletionHandler completion: @escaping (_ result: SKTResult, _ complete: SKTCaptureProperty?) -> Swift.Void)
+  open func getFriendlyNameWithCompletionHandler(_ completion: @escaping (_ result: SKTCapture.SKTResult, _ name: Swift.String?) -> Swift.Void)
+  open func setFriendlyName(_ name: Swift.String, withCompletionHandler completion: @escaping (_ result: SKTCapture.SKTResult) -> Swift.Void)
+  open func getBluetoothAddressWithCompletionHandler(_ completion: @escaping (_ result: SKTCapture.SKTResult, _ bluetoothAddress: Foundation.Data?) -> Swift.Void)
+  open func getTypeWithCompletionHandler(_ completion: @escaping (_ result: SKTCapture.SKTResult, _ deviceType: Swift.UInt?) -> Swift.Void)
+  open func getFirmwareVersionWithCompletionHandler(_ completion: @escaping (_ result: SKTCapture.SKTResult, _ version: SKTCapture.SKTCaptureVersion?) -> Swift.Void)
+  open func getBatteryLevelWithCompletionHandler(_ completion: @escaping (_ result: SKTCapture.SKTResult, _ batteryLevel: Swift.UInt?) -> Swift.Void)
+  open func getPowerStateWithCompletionHandler(_ completion: @escaping (_ result: SKTCapture.SKTResult, _ powerState: Swift.UInt?) -> Swift.Void)
+  open func getButtonsStateWithCompletionHandler(_ completion: @escaping (_ result: SKTCapture.SKTResult, _ buttonsState: SKTCapture.SKTCaptureButtonsState?) -> Swift.Void)
+  open func getStandConfigWithCompletionHandler(_ completion: @escaping (_ result: SKTCapture.SKTResult, _ config: SKTCapture.SKTCaptureStandConfig?) -> Swift.Void)
+  open func setStandConfig(_ config: SKTCapture.SKTCaptureStandConfig, withCompletionHandler completion: @escaping (_ result: SKTCapture.SKTResult) -> Swift.Void)
+  open func getDecodeActionWithCompletionHandler(_ completion: @escaping (_ result: SKTCapture.SKTResult, _ decodeAction: SKTCapture.SKTCaptureLocalDecodeAction?) -> Swift.Void)
+  open func setDecodeAction(_ decodeAction: SKTCapture.SKTCaptureLocalDecodeAction, withCompletionHandler completion: @escaping (_ result: SKTCapture.SKTResult) -> Swift.Void)
+  open func getDataAcknowledgmentWithCompletionHandler(_ completion: @escaping (_ result: SKTCapture.SKTResult, _ dataAcknownledgement: SKTCapture.SKTCaptureDeviceDataAcknowledgment?) -> Swift.Void)
+  open func setDataAcknowledgment(_ dataAcknowledgment: SKTCapture.SKTCaptureDeviceDataAcknowledgment, withCompletionHandler completion: @escaping (_ result: SKTCapture.SKTResult) -> Swift.Void)
+  open func getPostambleWithCompletionHandler(_ completion: @escaping (_ result: SKTCapture.SKTResult, _ postamble: Swift.String?) -> Swift.Void)
+  open func setPostamble(_ postamble: Swift.String, withCompletionHandler completion: @escaping (_ result: SKTCapture.SKTResult) -> Swift.Void)
+  open func getDataSourceInfoFromId(_ dataSourceId: SKTCapture.SKTCaptureDataSourceID, withCompletionHandler completion: @escaping (_ result: SKTCapture.SKTResult, _ dataSourceInfo: SKTCapture.SKTCaptureDataSource?) -> Swift.Void)
+  open func setDataSourceInfo(_ dataSource: SKTCapture.SKTCaptureDataSource, withCompletionHandler completion: @escaping (_ result: SKTCapture.SKTResult) -> Swift.Void)
+  open func setTrigger(_ trigger: SKTCapture.SKTCaptureTrigger, withCompletionHandler completion: @escaping (_ result: SKTCapture.SKTResult) -> Swift.Void)
+  open func setDataConfirmationWithLed(_ led: SKTCapture.SKTCaptureDataConfirmationLed, withBeep beep: SKTCapture.SKTCaptureDataConfirmationBeep, withRumble rumble: SKTCapture.SKTCaptureDataConfirmationRumble, withCompletionHandler completion: @escaping (_ result: SKTCapture.SKTResult) -> Swift.Void)
+  open func setNotifications(_ notifications: SKTCapture.SKTCaptureNotifications, withCompletionHandler completion: @escaping (_ result: SKTCapture.SKTResult) -> Swift.Void)
+  open func getNotificationsWithCompletionHandler(_ completion: @escaping (_ result: SKTCapture.SKTResult, _ notifications: SKTCapture.SKTCaptureNotifications?) -> Swift.Void)
+  open func setSoftScanOverlayViewParameter(_ parameters: Swift.Dictionary<Swift.String, Any>, withCompletionHandler completion: @escaping (_ result: SKTCapture.SKTResult) -> Swift.Void)
+  open func getSoftScanOverlayViewParameterWithCompletionHandler(_ completion: @escaping (_ result: SKTCapture.SKTResult, _ parameter: Swift.Dictionary<Swift.String, Any>?) -> Swift.Void)
+  open func getDeviceSpecificCommand(_ command: Foundation.Data, withCompletionHandler completion: @escaping (_ result: SKTCapture.SKTResult, _ commandResult: Foundation.Data?) -> Swift.Void)
+  open func setDataFormat(dataFormat: SKTCapture.SKTCaptureDataFormat, completion: @escaping (_ result: SKTCapture.SKTResult) -> Swift.Void)
+  open func getDataFormatWithCompletionHandler(_ completion: @escaping (_ result: SKTCapture.SKTResult, _ dataFormat: SKTCapture.SKTCaptureDataFormat?) -> Swift.Void)
+  open func getProperty(_ property: SKTCapture.SKTCaptureProperty, withCompletionHandler completion: @escaping (_ result: SKTCapture.SKTResult, _ complete: SKTCapture.SKTCaptureProperty?) -> Swift.Void)
+  open func setProperty(_ property: SKTCapture.SKTCaptureProperty, withCompletionHandler completion: @escaping (_ result: SKTCapture.SKTResult, _ complete: SKTCapture.SKTCaptureProperty?) -> Swift.Void)
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class CaptureHelperDeviceManager : CaptureHelperDevice {
-  open func startDiscoveryWithTimeout(_ timeout: ObjectiveC.NSInteger, withCompletionHandler completion: @escaping (_ result: SKTResult) -> Swift.Void)
-  open func setFavoriteDevices(_ favorites: Swift.String, withCompletionHandler completion: @escaping (_ result: SKTResult) -> Swift.Void)
-  open func getFavoriteDevicesWithCompletionHandler(_ completion: @escaping (_ result: SKTResult, _ favorites: Swift.String?) -> Swift.Void)
-  open func getDeviceUniqueIdentifierFromDeviceGuid(_ deviceGuid: Swift.String, withCompletionHandler completion: @escaping (_ result: SKTResult, _ deviceUniqueIdentifier: Swift.String?) -> Swift.Void)
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class CaptureHelperDeviceManager : SKTCapture.CaptureHelperDevice {
+  open func startDiscoveryWithTimeout(_ timeout: ObjectiveC.NSInteger, withCompletionHandler completion: @escaping (_ result: SKTCapture.SKTResult) -> Swift.Void)
+  open func setFavoriteDevices(_ favorites: Swift.String, withCompletionHandler completion: @escaping (_ result: SKTCapture.SKTResult) -> Swift.Void)
+  open func getFavoriteDevicesWithCompletionHandler(_ completion: @escaping (_ result: SKTCapture.SKTResult, _ favorites: Swift.String?) -> Swift.Void)
+  open func getDeviceUniqueIdentifierFromDeviceGuid(_ deviceGuid: Swift.String, withCompletionHandler completion: @escaping (_ result: SKTCapture.SKTResult, _ deviceUniqueIdentifier: Swift.String?) -> Swift.Void)
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class CaptureHelper : ObjectiveC.NSObject, SKTCaptureDelegate {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class CaptureHelper : ObjectiveC.NSObject, SKTCapture.SKTCaptureDelegate {
   public var extensionProperties: Swift.Dictionary<Swift.String, Any>
   public var dispatchQueue: Dispatch.DispatchQueue?
-  public static let sharedInstance: CaptureHelper
-  public var captureApi: SKTCapture? {
+  public static let sharedInstance: SKTCapture.CaptureHelper
+  public var captureApi: SKTCapture.SKTCapture? {
     get
   }
   @discardableResult
-  open func pushDelegate(_ delegate: CaptureHelperDelegate) -> Swift.Bool
+  open func pushDelegate(_ delegate: SKTCapture.CaptureHelperDelegate) -> Swift.Bool
   @discardableResult
-  open func popDelegate(_ delegate: CaptureHelperDelegate) -> Swift.Bool
-  open func getDevices() -> Swift.Array<CaptureHelperDevice>
-  open func getDeviceManagers() -> Swift.Array<CaptureHelperDeviceManager>
-  open func openWithAppInfo(_ appInfo: SKTAppInfo, withCompletionHandler completion: @escaping (_ result: SKTResult) -> Swift.Void)
-  open func closeWithCompletionHandler(_ completion: @escaping (_ result: SKTResult) -> Swift.Void)
-  @objc public func didReceive(_ event: SKTCaptureEvent!, for capture: SKTCapture!, withResult result: SKTResult)
-  open func getVersionWithCompletionHandler(_ completion: @escaping (_ result: SKTResult, _ version: SKTCaptureVersion?) -> Swift.Void)
-  open func getConfirmationModeWithCompletionHandler(_ completion: @escaping (_ result: SKTResult, _ confirmationMode: SKTCaptureDataConfirmation?) -> Swift.Void)
-  open func setConfirmationMode(_ confirmationMode: SKTCaptureDataConfirmation, withCompletionHandler completion: @escaping (_ result: SKTResult) -> Swift.Void)
-  open func getSoftScanStatusWithCompletionHandler(_ completion: @escaping (_ result: SKTResult, _ status: SKTCaptureSoftScan?) -> Swift.Void)
-  open func setSoftScanStatus(_ status: SKTCaptureSoftScan, withCompletionHandler completion: @escaping (_ result: SKTResult) -> Swift.Void)
-  open func getProperty(_ property: SKTCaptureProperty, withCompletionHandler completion: @escaping (_ result: SKTResult, _ complete: SKTCaptureProperty?) -> Swift.Void)
-  open func setProperty(_ property: SKTCaptureProperty, withCompletionHandler completion: @escaping (_ result: SKTResult, _ complete: SKTCaptureProperty?) -> Swift.Void)
+  open func popDelegate(_ delegate: SKTCapture.CaptureHelperDelegate) -> Swift.Bool
+  open func getDevices() -> Swift.Array<SKTCapture.CaptureHelperDevice>
+  open func getDeviceManagers() -> Swift.Array<SKTCapture.CaptureHelperDeviceManager>
+  open func openWithAppInfo(_ appInfo: SKTCapture.SKTAppInfo, withCompletionHandler completion: @escaping (_ result: SKTCapture.SKTResult) -> Swift.Void)
+  open func closeWithCompletionHandler(_ completion: @escaping (_ result: SKTCapture.SKTResult) -> Swift.Void)
+  @objc public func didReceive(_ event: SKTCapture.SKTCaptureEvent, for capture: SKTCapture.SKTCapture, withResult result: SKTCapture.SKTResult)
+  open func getVersionWithCompletionHandler(_ completion: @escaping (_ result: SKTCapture.SKTResult, _ version: SKTCapture.SKTCaptureVersion?) -> Swift.Void)
+  open func getConfirmationModeWithCompletionHandler(_ completion: @escaping (_ result: SKTCapture.SKTResult, _ confirmationMode: SKTCapture.SKTCaptureDataConfirmation?) -> Swift.Void)
+  open func setConfirmationMode(_ confirmationMode: SKTCapture.SKTCaptureDataConfirmation, withCompletionHandler completion: @escaping (_ result: SKTCapture.SKTResult) -> Swift.Void)
+  open func getSoftScanStatusWithCompletionHandler(_ completion: @escaping (_ result: SKTCapture.SKTResult, _ status: SKTCapture.SKTCaptureSoftScan?) -> Swift.Void)
+  open func setSoftScanStatus(_ status: SKTCapture.SKTCaptureSoftScan, withCompletionHandler completion: @escaping (_ result: SKTCapture.SKTResult) -> Swift.Void)
+  open func getProperty(_ property: SKTCapture.SKTCaptureProperty, withCompletionHandler completion: @escaping (_ result: SKTCapture.SKTResult, _ complete: SKTCapture.SKTCaptureProperty?) -> Swift.Void)
+  open func setProperty(_ property: SKTCapture.SKTCaptureProperty, withCompletionHandler completion: @escaping (_ result: SKTCapture.SKTResult, _ complete: SKTCapture.SKTCaptureProperty?) -> Swift.Void)
   @objc deinit
 }
