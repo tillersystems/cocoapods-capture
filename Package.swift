@@ -4,11 +4,15 @@
 import PackageDescription
 
 let package = Package(
-    name: "SKTCapture",
+    name: "SKTCaptureSPM",
+    platforms: [
+        .iOS(.v11)
+    ],
     products: [
-        .library(name: "SKTCapture", targets: ["SKTCapture"])
+        .library(name: "SKTCaptureSPM", targets: ["SKTCaptureSPM"])
     ],
     targets: [
-        .binaryTarget(name: "SKTCapture", path: "SKTCapture.xcframework")
+        .target(name: "SKTCaptureSPM", dependencies: ["SKTCapture"]),
+        .binaryTarget(name: "SKTCapture", path: "./Frameworks/SKTCapture.xcframework")
     ]
 )
