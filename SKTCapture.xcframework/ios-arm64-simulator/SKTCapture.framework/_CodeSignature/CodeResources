@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/SKTCapture.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		upA9+eTkzOG9GePaePJL2R/S69I=
+		mQkqdcvVVHsfHdZWjXe+N1Rbfwk=
 		</data>
 		<key>Modules/SKTCapture.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/SKTCapture.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		zXbkQHNUhEQ9VxSdInBHyx+0vd4=
+		5mozT6iJn3qZmsVuswPycJ7MDWo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -185,11 +185,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			upA9+eTkzOG9GePaePJL2R/S69I=
+			mQkqdcvVVHsfHdZWjXe+N1Rbfwk=
 			</data>
 			<key>hash2</key>
 			<data>
-			MuJWuSJcD9LiG9UC5CgKZuO0T6k5MaVu+quS9ZQs+Sc=
+			ET1qrOEl2RI6oTFlNFLpvd26EcDujVPGWGXT6QP6B/o=
 			</data>
 		</dict>
 		<key>Modules/SKTCapture.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -218,11 +218,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zXbkQHNUhEQ9VxSdInBHyx+0vd4=
+			5mozT6iJn3qZmsVuswPycJ7MDWo=
 			</data>
 			<key>hash2</key>
 			<data>
-			Srr6HeV5fwgLRZoHGwz+VmQ0l5JBKPkzAmUhH5BO2BQ=
+			pmmVJ0QcUliXpNSNLDTgkBsolhk7bQmeoDkE0A1Vgg8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
