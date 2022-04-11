@@ -4,15 +4,21 @@
 import PackageDescription
 
 let package = Package(
-    name: "SKTCaptureSPM",
+    name: "SKTCapture",
     platforms: [
         .iOS(.v11)
     ],
     products: [
-        .library(name: "SKTCaptureSPM", targets: ["SKTCaptureSPM"])
+        .library(name: "SKTCapture", targets: ["SKTCapture", "CaptureHelper"])
     ],
     targets: [
-        .target(name: "SKTCaptureSPM", dependencies: ["SKTCapture"]),
-        .binaryTarget(name: "SKTCapture", path: "./Frameworks/SKTCapture.xcframework")
+        .binaryTarget(name: "SKTCapture", path: "./Frameworks/SKTCapture.xcframework"),
+        .target(name: "CaptureHelper",
+                dependencies: ["SKTCapture"],
+                linkerSettings: [
+                    .linkedLibrary("stdc++"),
+                    .linkedFramework("AVFoundation"),
+                    .linkedFramework("AudioToolbox")
+                ])
     ]
 )
